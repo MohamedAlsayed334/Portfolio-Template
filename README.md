@@ -44,7 +44,7 @@ cd Portfolio-Templete
 npm install
 cp .env.example .env
 ```
-
+> [!CAUTION]
 > 🚧 <b style="color: red" >Then follow the setup guides below to configure Supabase and EmailJS.</b>
 
 ---
@@ -56,7 +56,8 @@ cp .env.example .env
 1. Create a project at <a href="https://supabase.com" target="_blank">supabase.com</a>
 2. Go to **SQL Editor**, paste and run the contents of `src/data/schema.sql`
 3. Go to **Authentication → Sign in/Providers → Email** and enable email/password auth
-4. 🚨<b style="color: red" > Important : </b>
+> [!CAUTION]
+> 🚨<b style="color: red" > Important : </b>
    <br>
    <mark>
    1- You must Disable **Allow new users to sign up** as you don't want anyone to make account (In case any security issue)
@@ -65,11 +66,12 @@ cp .env.example .env
    2- You must Disable **Confirm email** as you don't want to verify email (Supabase sometimes doesn't send email verification)
   </mark>
 
-5. Go to **Authentication → Users** and create an admin user (this will be your login)
+4. Go to **Authentication → Users** and create an admin user (this will be your login)
    
-6. Find your credentials in **Project Settings**
+5. Find your credentials in **Project Settings**
    - **1- Get SUPABASE_ANON_KEY** : **API Keys→ Publishable key -> Copy**
- - >⚠️ <b style="color: red" > Important : </b> **Don't get the Secret keys** we need the **Publishable key**
+   > [!CAUTION]
+   >⚠️ <b style="color: red" > Important : </b> **Don't get the Secret keys** we need the **Publishable key**
 
    - **2- Get SUPABASE_URL** : **Data API → API URL(copyy  the URL)**
 
