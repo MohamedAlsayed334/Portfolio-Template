@@ -237,7 +237,6 @@ The contact form uses **EmailJS** to send messages directly to your email. All E
 
 
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.   
-<a href="https://github.com/yourusername/yourproject/blob/main/LICENSE">MIT License</a>
 ---
 
 ## Contributing
