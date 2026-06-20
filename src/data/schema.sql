@@ -113,15 +113,3 @@ CREATE POLICY "admin_all" ON projects FOR ALL USING (auth.role() = 'authenticate
 CREATE POLICY "public_read" ON contact FOR SELECT USING (true);
 CREATE POLICY "admin_all" ON contact FOR ALL USING (auth.role() = 'authenticated');
 
--- 10. Insert initial rows for single-row tables (update with your info)
-INSERT INTO hero (id, name, title, subtitle, resume)
-VALUES (1, 'Your Name', 'Your Title', 'Your tagline here', '/resume/resume.pdf')
-ON CONFLICT (id) DO NOTHING;
-
-INSERT INTO about (id, image, paragraphs)
-VALUES (1, '/images/profile.webp', '["Write your bio here.", "Add as many paragraphs as you like."]')
-ON CONFLICT (id) DO NOTHING;
-
-INSERT INTO contact (id, whatsapp, email, github, linkedin, facebook)
-VALUES (1, 'https://wa.me/yournumber', 'your.email@example.com', 'https://github.com/yourusername', 'https://linkedin.com/in/yourusername', 'https://facebook.com/yourusername')
-ON CONFLICT (id) DO NOTHING;
