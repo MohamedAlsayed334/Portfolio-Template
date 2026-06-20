@@ -52,7 +52,7 @@ A fully-featured **portfolio template** built with **Next.js (App Router)** and 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Portfolio-Templete.git
+git clone https://github.com/MohamedAlsayed334/Portfolio-Templete.git
 cd Portfolio-Templete
 ```
 
@@ -72,7 +72,7 @@ npm install
 ### 4. Configure environment variables
 
 ```bash
-cp .env.example .env
+cp  .env
 ```
 
 Edit `.env` and fill in your Supabase credentials:
