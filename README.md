@@ -1,4 +1,4 @@
-# Next.js Supabase Portfolio
+# Portfolio-Templete
 
 A fully-featured **portfolio template** built with **Next.js (App Router)** and **Supabase** — complete with an **admin panel** so you can edit all your content directly from a dashboard (no code changes needed).
 
@@ -52,8 +52,8 @@ A fully-featured **portfolio template** built with **Next.js (App Router)** and 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/nextjs-supabase-portfolio.git
-cd nextjs-supabase-portfolio
+git clone https://github.com/yourusername/Portfolio-Templete.git
+cd Portfolio-Templete
 ```
 
 ### 2. Install dependencies
@@ -98,7 +98,7 @@ Open [http://localhost:3000/admin](http://localhost:3000/admin) and log in with 
 ## Project Structure
 
 ```
-nextjs-supabase-portfolio/
+Portfolio-Templete/
 ├── public/                    # Static assets (images, etc.)
 ├── src/
 │   ├── app/
