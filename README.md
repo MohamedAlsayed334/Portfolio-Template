@@ -1,4 +1,4 @@
-# Portfolio-Templete
+# Portfolio-Template
 
 A fully-featured **portfolio template** built with **Next.js (App Router)** and **Supabase** — complete with an **admin panel** so you can edit all your content directly from a dashboard (no code changes needed).
 
