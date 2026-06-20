@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { api } from '@/lib/api'
 
 export default function AdminHero() {
-  const [form, setForm] = useState({ name: '', title: '', subtitle: '' })
+  const [form, setForm] = useState({ name: '', title: '', subtitle: '', resume: '' })
   const [saving, setSaving] = useState(false)
   const [msg, setMsg] = useState('')
 
@@ -53,6 +53,10 @@ export default function AdminHero() {
           <div className="field">
             <label className="label">Subtitle</label>
             <textarea className="textarea" value={form.subtitle} onChange={(e) => setForm({ ...form, subtitle: e.target.value })} />
+          </div>
+          <div className="field">
+            <label className="label">Resume Path</label>
+            <input className="input" value={form.resume} onChange={(e) => setForm({ ...form, resume: e.target.value })} placeholder="/resume/resume.pdf" />
           </div>
           <button className="saveBtn" type="submit" disabled={saving}>
             {saving ? 'Saving...' : 'Save Changes'}

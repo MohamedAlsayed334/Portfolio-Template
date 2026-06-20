@@ -8,6 +8,7 @@ CREATE TABLE hero (
   name text NOT NULL DEFAULT '',
   title text NOT NULL DEFAULT '',
   subtitle text NOT NULL DEFAULT '',
+  resume text NOT NULL DEFAULT '',
   updated_at timestamptz DEFAULT now()
 );
 ALTER TABLE hero ADD CONSTRAINT hero_single_row CHECK (id = 1);
@@ -113,8 +114,8 @@ CREATE POLICY "public_read" ON contact FOR SELECT USING (true);
 CREATE POLICY "admin_all" ON contact FOR ALL USING (auth.role() = 'authenticated');
 
 -- 10. Insert initial rows for single-row tables (update with your info)
-INSERT INTO hero (id, name, title, subtitle)
-VALUES (1, 'Your Name', 'Your Title', 'Your tagline here')
+INSERT INTO hero (id, name, title, subtitle, resume)
+VALUES (1, 'Your Name', 'Your Title', 'Your tagline here', '/resume/resume.pdf')
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO about (id, image, paragraphs)

@@ -2,6 +2,7 @@ export const hero = {
   name: 'Your Name',
   title: 'Your Title / Role',
   subtitle: 'A short tagline or description about yourself.',
+  resume: '/resume/resume.pdf',
 }
 
 export const about = {

@@ -48,7 +48,7 @@ export default function Hero() {
         <p className={styles.subtitle}>{hero?.subtitle}</p>
         <div className={styles.buttons}>
           <Button variant="brand" icon={Download}>
-            <a href="/resume.pdf" download style={{ color: 'inherit', textDecoration: 'none' }}>
+            <a href={hero?.resume || '/resume/resume.pdf'} download style={{ color: 'inherit', textDecoration: 'none' }}>
               Download Resume
             </a>
           </Button>
